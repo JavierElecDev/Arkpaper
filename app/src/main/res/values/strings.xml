@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Arckpaper</string>
+    <string name="log_user">Usuario</string>
+    <string name="log_password">Contraseña</string>
+    <string name="log_hint_email">Correo electronico</string>
+    <string name="log_hint_password">Contraseña</string>
+    <string name="logBtn_Iniciar">Iniciar sesión</string>
+    <string name="logBtn_Registrarse">Registrarse</string>
 </resources>

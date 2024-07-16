@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "80196235763",
+    "project_id": "arckpaper",
+    "storage_bucket": "arckpaper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80196235763:android:44af1a50946f91b623e286",
+        "android_client_info": {
+          "package_name": "com.example.arckpaper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpXcp0z2z4urYmOF7JqwlIqRMdQBUYGT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

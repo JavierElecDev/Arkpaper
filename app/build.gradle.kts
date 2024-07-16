@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -8,8 +9,9 @@ android {
 
     defaultConfig {
         applicationId = "com.example.arckpaper"
-        minSdk = 24
-        targetSdk = 34
+        minSdk = 29
+        //noinspection ExpiredTargetSdkVersion
+        targetSdk = 29
         versionCode = 1
         versionName = "1.0"
 
@@ -37,4 +39,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
 }
