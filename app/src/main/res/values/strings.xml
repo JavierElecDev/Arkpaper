@@ -6,4 +6,6 @@
     <string name="log_hint_password">Contraseña</string>
     <string name="logBtn_Iniciar">Iniciar sesión</string>
     <string name="logBtn_Registrarse">Registrarse</string>
+    <string name="firebase_login">login user firebase</string>
+    <string name="firebase_register">Registro usuario firebase</string>
 </resources>
