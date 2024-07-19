@@ -13,6 +13,21 @@
         android:theme="@style/Theme.Arckpaper"
         tools:targetApi="31">
         <activity
+            android:name=".UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".views.Login"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
@@ -24,9 +39,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
