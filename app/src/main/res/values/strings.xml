@@ -13,6 +13,7 @@
     <string name="reg_phone">Ingresa un numero telefonico</string>
     <string name="reg_ciudad">Indica una ciudad</string>
     <string name="reg_direccion">Ingresa una direccion</string>
+    <string name="nombre">Ingresa tu Nombre</string>
 
 
     <string name="habeas">

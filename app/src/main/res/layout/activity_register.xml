@@ -8,6 +8,7 @@
     tools:context=".Register"
     android:background="@drawable/bk_reg1">
 
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
@@ -19,9 +20,10 @@
         app:srcCompat="@drawable/registroadv" />
 
     <ScrollView
-        android:layout_width="352dp"
-        android:layout_height="416dp"
-        android:layout_marginTop="36dp"
+        android:id="@+id/scrollView3"
+        android:layout_width="364dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2">
@@ -30,6 +32,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:textAlignment="center"
+                android:textColor="#5500ff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/regNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:background="@drawable/roundetreg"
+                android:ems="10"
+                android:textSize="24dp" />
 
             <TextView
                 android:id="@+id/tvEmail"
@@ -45,11 +66,11 @@
                 android:id="@+id/regetEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:background="@drawable/roundetreg"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:textSize="24dp"
-                android:background="@drawable/roundetreg"
-                android:alpha="0.4"/>
+                android:textSize="24dp" />
 
             <TextView
                 android:id="@+id/tvrepemail"
@@ -62,14 +83,14 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextEmailAddress5"
+                android:id="@+id/regConfetEamil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:background="@drawable/roundetreg"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:textSize="24dp"
-                android:background="@drawable/roundetreg"
-                android:alpha="0.4"/>
+                android:textSize="24dp" />
 
             <TextView
                 android:id="@+id/tvpass"
@@ -85,12 +106,12 @@
                 android:id="@+id/regetPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:background="@drawable/roundetreg"
                 android:ems="10"
                 android:inputType="textPassword"
                 android:textColor="#5500ff"
-                android:textSize="24dp"
-                android:background="@drawable/roundetreg"
-                android:alpha="0.4"/>
+                android:textSize="24dp" />
 
             <TextView
                 android:id="@+id/tvrepPass"
@@ -103,14 +124,14 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/etPass"
+                android:id="@+id/regConfetPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:background="@drawable/roundetreg"
                 android:ems="10"
                 android:inputType="textPassword"
-                android:textSize="24dp"
-                android:background="@drawable/roundetreg"
-                android:alpha="0.4"/>
+                android:textSize="24dp" />
 
             <TextView
                 android:id="@+id/regphon"
@@ -123,39 +144,107 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextPhone"
+                android:id="@+id/regeditTextPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:background="@drawable/roundetreg"
                 android:ems="10"
                 android:inputType="phone"
-                android:textSize="24dp"
-                android:background="@drawable/roundetreg"
-                android:alpha="0.4"/>
+                android:textSize="24dp" />
+
+
         </LinearLayout>
     </ScrollView>
+
+
+    <TextView
+        android:id="@+id/TerminosYcondiciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Terminos y condiciones"
+        android:textAlignment="center"
+        android:textColor="#5500ff"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="283dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TerminosYcondiciones">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:text="@string/habeas"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <CheckBox
+        android:id="@+id/checkInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="acpetar Tratamiento de informacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkTerminos" />
+
+    <CheckBox
+        android:id="@+id/checkTerminos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:text="Acpetar Terminos y Condiciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4" />
 
     <Button
         android:id="@+id/regBtnVolver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#268d72"
         android:text="Regresar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:textColor="#eaae57"
-        android:backgroundTint="#268d72"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/regBtnContinuar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#268d72"
         android:text="Continuar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:textColor="#eaae57"
-        android:backgroundTint="#268d72" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
