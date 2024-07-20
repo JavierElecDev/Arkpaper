@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/bk_reg1">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/registroadv" />
+
+    <ScrollView
+        android:layout_width="352dp"
+        android:layout_height="416dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reg_email"
+                android:textAlignment="center"
+                android:textColor="#5500ff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/regetEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textSize="24dp"
+                android:background="@drawable/roundetreg"
+                android:alpha="0.4"/>
+
+            <TextView
+                android:id="@+id/tvrepemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rep_email"
+                android:textAlignment="center"
+                android:textColor="#5500ff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textSize="24dp"
+                android:background="@drawable/roundetreg"
+                android:alpha="0.4"/>
+
+            <TextView
+                android:id="@+id/tvpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reg_pass"
+                android:textAlignment="center"
+                android:textColor="#5500ff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/regetPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="#5500ff"
+                android:textSize="24dp"
+                android:background="@drawable/roundetreg"
+                android:alpha="0.4"/>
+
+            <TextView
+                android:id="@+id/tvrepPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rep_pass"
+                android:textAlignment="center"
+                android:textColor="#5500ff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textSize="24dp"
+                android:background="@drawable/roundetreg"
+                android:alpha="0.4"/>
+
+            <TextView
+                android:id="@+id/regphon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reg_phone"
+                android:textAlignment="center"
+                android:textColor="#5500ff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:textSize="24dp"
+                android:background="@drawable/roundetreg"
+                android:alpha="0.4"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/regBtnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="60dp"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#eaae57"
+        android:backgroundTint="#268d72"/>
+
+    <Button
+        android:id="@+id/regBtnContinuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="60dp"
+        android:text="Continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#eaae57"
+        android:backgroundTint="#268d72" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

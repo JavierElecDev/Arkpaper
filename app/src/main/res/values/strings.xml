@@ -6,4 +6,30 @@
     <string name="log_hint_password">Contraseña</string>
     <string name="logBtn_Iniciar">Iniciar sesión</string>
     <string name="logBtn_Registrarse">Registrarse</string>
+    <string name="reg_email">Ingresa un correo</string>
+    <string name="rep_email">Confirma el correo</string>
+    <string name="reg_pass">Ingresa una Contraseña</string>
+    <string name="rep_pass">Confirma la contraseña</string>
+    <string name="reg_phone">Ingresa un numero telefonico</string>
+    <string name="reg_ciudad">Indica una ciudad</string>
+    <string name="reg_direccion">Ingresa una direccion</string>
+
+
+    <string name="habeas">
+        Arckpaper es una aplicación que permite a los usuarios crear y compartir notas, dibujos y bocetos. La aplicación recopila y procesa datos personales de los usuarios, por lo que es importante que cumpla con los principios de Habeas Data.
+        Política de privacidad
+        Arckpaper debe tener una política de privacidad clara y visible que explique qué datos personales recopila, cómo se utilizan y con quién se comparten. La política de privacidad debe ser fácil de entender y accesible para todos los usuarios.
+        Datos personales recopilados
+        Arckpaper puede recopilar los siguientes datos personales de los usuarios:
+        Información de registro: nombre, dirección de correo electrónico, contraseña, fecha de nacimiento, país de residencia.
+        Datos de uso: actividad en la aplicación, notas creadas, dibujos realizados, bocetos compartidos.
+        Datos del dispositivo: tipo de dispositivo, sistema operativo, versión de la aplicación, dirección IP.
+        Uso de los datos personales
+        Arckpaper puede utilizar los datos personales de los usuarios para los siguientes fines:
+        Proporcionar y mejorar los servicios de la aplicación.
+        Enviar comunicaciones a los usuarios, como notificaciones de actualizaciones, boletines informativos y ofertas promocionales.
+        Personalizar la experiencia del usuario en la aplicación.
+        Realizar análisis de datos para comprender mejor el uso de la aplicación.
+        Detectar y prevenir fraudes y abusos.
+    </string>
 </resources>

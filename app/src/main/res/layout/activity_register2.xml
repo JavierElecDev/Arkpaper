@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register2"
+    android:background="@drawable/bk_reg2">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="260dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/regterminos" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="366dp"
+        android:layout_height="326dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:text="@string/habeas"
+                android:textAlignment="center"
+                android:editable="false"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/checkInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="acpetar Tratamiento de informacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkTerminos" />
+
+    <CheckBox
+        android:id="@+id/checkTerminos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acpetar Terminos y Condiciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Registrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkInfo"
+        android:backgroundTint="#fb7574"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
