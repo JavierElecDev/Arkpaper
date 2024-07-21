@@ -58,7 +58,7 @@
                 android:alpha="0.8"
                 android:background="@drawable/rounded_textview"
                 android:hint="@string/log_password"
-                android:inputType="textEmailAddress"
+                android:inputType="textPassword"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"

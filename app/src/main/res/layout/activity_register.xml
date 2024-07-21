@@ -50,7 +50,8 @@
                 android:alpha="0.4"
                 android:background="@drawable/roundetreg"
                 android:ems="10"
-                android:textSize="24dp" />
+                android:textSize="24dp"
+                android:textAlignment="center"/>
 
             <TextView
                 android:id="@+id/tvEmail"
@@ -70,7 +71,8 @@
                 android:background="@drawable/roundetreg"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:textSize="24dp" />
+                android:textSize="24dp"
+                android:textAlignment="center"/>
 
             <TextView
                 android:id="@+id/tvrepemail"
@@ -90,7 +92,8 @@
                 android:background="@drawable/roundetreg"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:textSize="24dp" />
+                android:textSize="24dp"
+                android:textAlignment="center"/>
 
             <TextView
                 android:id="@+id/tvpass"
@@ -111,7 +114,8 @@
                 android:ems="10"
                 android:inputType="textPassword"
                 android:textColor="#5500ff"
-                android:textSize="24dp" />
+                android:textSize="24dp"
+                android:textAlignment="center"/>
 
             <TextView
                 android:id="@+id/tvrepPass"
@@ -131,7 +135,8 @@
                 android:background="@drawable/roundetreg"
                 android:ems="10"
                 android:inputType="textPassword"
-                android:textSize="24dp" />
+                android:textSize="24dp"
+                android:textAlignment="center"/>
 
             <TextView
                 android:id="@+id/regphon"
@@ -151,9 +156,8 @@
                 android:background="@drawable/roundetreg"
                 android:ems="10"
                 android:inputType="phone"
-                android:textSize="24dp" />
-
-
+                android:textSize="24dp"
+                android:textAlignment="center"/>
         </LinearLayout>
     </ScrollView>
 

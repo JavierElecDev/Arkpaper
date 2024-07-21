@@ -58,7 +58,7 @@ public class Comprobaciones {
         }
     }
 
-    //metodo que verifica un correo valido
+    //metodo que verifica un correo valido para el registro
     public boolean VerficaCorreo(String CorreoE, String validaCorreo) {
         this.Correo = CorreoE;
         /*reg_expresion.matcher(Correo).matches()
@@ -99,6 +99,7 @@ public class Comprobaciones {
             return true;
         }
     }
+
 
     //Metodo para comprobar que los campos del registro no esten vacios
     public boolean comprobarCamposRegistro(String nombre, String correo, String confCorreo,

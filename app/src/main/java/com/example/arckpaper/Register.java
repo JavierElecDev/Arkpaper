@@ -88,6 +88,7 @@ public class Register extends AppCompatActivity {
 
                 Intent login = new Intent(Register.this, Login.class);
                 startActivity(login);
+                finish();
             }else {
                 Toast.makeText(Register.this, "No entro", Toast.LENGTH_SHORT).show();
             }
