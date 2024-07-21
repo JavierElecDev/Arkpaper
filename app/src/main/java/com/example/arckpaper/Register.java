@@ -77,7 +77,7 @@ public class Register extends AppCompatActivity {
                 comp3 = false;
             }
             // si se verifican los pasos anteriores realiza el registro y limpia los cmapos
-            if (comp1 == true && comp2 == true  && comp3 == true) {
+            if (comp1 && comp2 && comp3) {
                 registroUsuariosViewModel.registroDeUsuario(nombre, correo, password, telefono);
                 etNombre.setText("");
                 etCorreo.setText("");
