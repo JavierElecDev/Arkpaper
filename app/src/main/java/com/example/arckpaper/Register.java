@@ -65,7 +65,8 @@ public class Register extends AppCompatActivity {
             String password = etPassword.getText().toString().trim();
             String validaPassword = etConfPassword.getText().toString().trim();
             String telefono = etTelefono.getText().toString().trim();
-
+            
+            //invocamos los metodos para comprobaciones
             comp1 = comprobar.comprobarCamposRegistro(nombre, correo, validaCorreo, password, validaPassword, telefono);
             comp2 = comprobar.VerficaCorreo(correo, validaCorreo);
 
@@ -75,7 +76,7 @@ public class Register extends AppCompatActivity {
                 Toast.makeText(Register.this, "Debes aceptar todos los terminos", Toast.LENGTH_SHORT).show();
                 comp3 = false;
             }
-
+            // si se verifican los pasos anteriores realiza el registro y limpia los cmapos
             if (comp1 == true && comp2 == true  && comp3 == true) {
                 registroUsuariosViewModel.registroDeUsuario(nombre, correo, password, telefono);
                 etNombre.setText("");
@@ -85,7 +86,7 @@ public class Register extends AppCompatActivity {
                 etConfPassword.setText("");
                 etTelefono.setText("");
                 Toast.makeText(Register.this, "Registro Completo", Toast.LENGTH_SHORT).show();
-
+                //regresamos al login luego del registro
                 Intent login = new Intent(Register.this, Login.class);
                 startActivity(login);
                 finish();
