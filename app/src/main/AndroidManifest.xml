@@ -13,6 +13,21 @@
         android:theme="@style/Theme.Arckpaper"
         tools:targetApi="31">
         <activity
+            android:name=".BuscarProducto"
+            android:exported="false" />
+        <activity
+            android:name=".EliminarProducto"
+            android:exported="false" />
+        <activity
+            android:name=".ActualizarProducto"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarProducto"
+            android:exported="false" />
+        <activity
+            android:name=".viewmodel.AgregarProducto"
+            android:exported="false" />
+        <activity
             android:name=".Home"
             android:exported="false" />
         <activity

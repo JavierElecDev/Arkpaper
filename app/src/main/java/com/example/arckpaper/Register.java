@@ -49,6 +49,7 @@ public class Register extends AppCompatActivity {
         etTelefono = findViewById(R.id.regeditTextPhone);
         volver = findViewById(R.id.regBtnVolver);
         continuar = findViewById(R.id.regBtnContinuar);
+        volver = findViewById(R.id.regBtnVolver);
         aceptarCondicones = findViewById(R.id.checkTerminos);
         aceptarTerminos = findViewById(R.id.checkInfo);
 
@@ -93,6 +94,11 @@ public class Register extends AppCompatActivity {
             }else {
                 Toast.makeText(Register.this, "No entro", Toast.LENGTH_SHORT).show();
             }
+        });
+
+        volver.setOnClickListener(v -> {
+            Intent volverLogin = new Intent(Register.this, Login.class);
+            startActivity(volverLogin);
         });
 
     }
