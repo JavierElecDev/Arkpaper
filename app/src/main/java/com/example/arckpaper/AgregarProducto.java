@@ -42,11 +42,11 @@ public class AgregarProducto extends AppCompatActivity {
         volver = findViewById(R.id.AddimgirHome);
         irbucar = findViewById(R.id.AddimgIrbuscar);
 
-        // Instanciamos el DAO para iniciar la conexion con la base de datos
+        // Instancia del DAO para iniciar la conexion con la base de datos
         ejecucionCRUD = new DaoProductos(this);
         ejecucionCRUD.establecerConexion();
 
-        // Configurar el adaptador para la lista
+        // Configuracion del adaptador para la lista
         productosList = new ArrayList<>();
         //se configura el adaptador para recibir la lista de productos con el diseño mas simple
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, productosList);
@@ -59,6 +59,11 @@ public class AgregarProducto extends AppCompatActivity {
         volver.setOnClickListener(v -> {
             Intent irHome = new Intent(AgregarProducto.this, Home.class);
             startActivity(irHome);
+        });
+
+        irbucar.setOnClickListener(v -> {
+            Intent irbuscar = new Intent(AgregarProducto.this, BuscarProducto.class);
+            startActivity(irbuscar);
         });
     }
 
