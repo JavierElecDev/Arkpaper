@@ -176,12 +176,24 @@ public class DaoProductos {
         }
     }
 
-    // metodo para borrar un producto
+    // metodo para borrar un producto por nombre
     public void eliminarProducto(String nombre) {
         String[] argumento = {nombre};
         //en caso de lagun error como en otras estrucutras que usamos
         try {
             int filasAfectadas = BD.delete("productos", "nombre_producto = ?", argumento);
+            Log.d("DaoProductos", "Producto eliminado, filas afectadas: " + filasAfectadas);
+        } catch (SQLException e) {
+            Log.e("DaoProductos", "Error al eliminar producto.", e);
+        }
+    }
+
+    // metodo para borrar un producto por id
+    public void eliminarProducto(int id) {
+        String[] argumento = {String.valueOf(id)};
+        //en caso de lagun error como en otras estrucutras que usamos
+        try {
+            int filasAfectadas = BD.delete("productos", "id = ?", argumento);
             Log.d("DaoProductos", "Producto eliminado, filas afectadas: " + filasAfectadas);
         } catch (SQLException e) {
             Log.e("DaoProductos", "Error al eliminar producto.", e);
