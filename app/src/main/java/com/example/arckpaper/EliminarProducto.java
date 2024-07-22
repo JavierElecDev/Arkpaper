@@ -1,6 +1,7 @@
 package com.example.arckpaper;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
@@ -64,11 +65,40 @@ public class EliminarProducto extends AppCompatActivity {
         //seteamos los listview
         BRlistaSimple.setAdapter(BRadapterSimple);
 
+        BRimgbuscar.setOnClickListener(v -> {
+            busquedaSimple();
+        });
+
+        Eliminar.setOnClickListener(v ->{
+            if(!etnombre.getText().toString().isEmpty()){
+                borrarPorNombre();
+            }else if (!etID.getText().toString().isEmpty()){
+                borrarPorID();
+            }
+        } );
+
+        BRirHome.setOnClickListener(v -> {
+            Intent irHome = new Intent(EliminarProducto.this, Home.class);
+            startActivity(irHome);
+        });
+
     }
 
     //metodo para borrar por el nombre
     public void borrarPorNombre(){
-        
+        String nombreProducto = etnombre.getText().toString().trim();
+
+        ejecucionCRUD.eliminarProducto(nombreProducto);
+        Toast.makeText(EliminarProducto.this,"Producto eliminado", Toast.LENGTH_SHORT).show();
+
+    }
+
+    public void borrarPorID(){
+        int id = Integer.parseInt(etID.getText().toString().trim());
+
+        ejecucionCRUD.eliminarProducto(id);
+        Toast.makeText(EliminarProducto.this,"Producto eliminado", Toast.LENGTH_SHORT).show();
+
     }
 
     //metodo para la busqueda de porductos por palabra
