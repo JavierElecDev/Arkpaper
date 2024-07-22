@@ -157,17 +157,17 @@ public class DaoProductos {
     }
 
     // metodo para actualizar valores de un producto
-    public long actualizarProducto(String nombre, String descripcion, int cantidad, float precio) {
+    public long actualizarProducto(int id,String nombre, String descripcion, int cantidad, float precio) {
         ContentValues productoNuevo = new ContentValues();
         productoNuevo.put("nombre_producto", nombre);
         productoNuevo.put("descripcion_producto", descripcion);
         productoNuevo.put("cantidad_producto", cantidad);
         productoNuevo.put("precio_producto", precio);
         //se usa para establecer la clausula de argumento codicionado al nombre del producto
-        String[] argumento = {nombre};
+        String[] argumento = {String.valueOf(id)};
 
         try {
-            long filasAfectadas = BD.update("productos", productoNuevo, "nombre_producto = ?", argumento);
+            long filasAfectadas = BD.update("productos", productoNuevo, "id = ?", argumento);
             Log.d("DaoProductos", "Producto actualizado, filas afectadas: " + filasAfectadas);
             return filasAfectadas;
         } catch (SQLException e) {

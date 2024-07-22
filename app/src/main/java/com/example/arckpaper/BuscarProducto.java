@@ -29,7 +29,6 @@ public class BuscarProducto extends AppCompatActivity {
     private EditText etBuscar;
     private Button buscarTodo;
     private ListView listaSimple, listaCompleta;
-    private ListView productoListView;
     private ArrayAdapter<String> adapterSimple;//adaptador para mostrar producto simple
     private List<String> productosListSimple; // lista que guarda los campos del registro de productos
     private ArrayAdapter<String> adapterCompleto;//adaptador para mostrar todos los productos
